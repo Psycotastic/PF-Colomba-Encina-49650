@@ -1,0 +1,42 @@
+/* Reinicio */
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+body {
+    display: flex;
+    @include fondo;
+
+    main {
+        width: 85vw;
+        height: 100vh;
+
+        h1 {
+            font-family: $display;
+            color: map-get($colores, amarillo);
+        }
+
+        h2 {
+            font-size: 1.2rem;
+        }
+        
+        h1, h2, h3, h4 {
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            padding: 0.5rem;
+        }
+
+        span, p, h2, h3, h4 {
+            font-family: $nunito;
+            color: map-get($colores, amarillo);
+        }
+
+        p {
+            padding: 0.2rem;
+        }
+    }
+}

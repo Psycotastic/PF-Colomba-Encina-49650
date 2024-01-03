@@ -1,0 +1,28 @@
+/* Sobre mí */
+
+main#sobre {
+    .sobre {
+        display: flex;
+        height: 100vh;
+
+        .izquierda, .derecha{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            div {
+                @include division;
+            }
+
+        }
+        .izquierda {
+            width: 45%;
+            padding: 5%;
+            @include formulario;
+            color: map-get($colores, amarillo)
+        }
+        .derecha {
+            width: 30%;
+        }
+    }
+}
